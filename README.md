@@ -14,7 +14,16 @@ This project intends to follow Semantic Versioning. See details below at "Releas
 
 ## Usage
 
-TODO: Write usage instructions here
+QM:B provides an extension to the GTIN classes implemented by BarcodeValidation. Because of this, it works automatically:
+
+```ruby
+BarcodeValidation.scan("12345670") # => BarcodeValidation::GTIN::GTIN8
+BarcodeValidation.scan("9669000000000") # => Questionmark::Barcodes::OldDummyGTIN
+BarcodeValidation.scan("9669990132302229019") # => Questionmark::Barcodes::DummyGTIN
+BarcodeValidation.scan("966999013200302000039007") # => Questionmark::Barcodes::FallbackDummyGTIN
+```
+
+As our custom GTINs start to offer more custom features, we'll add them here.
 
 ## Development
 
