@@ -2,10 +2,6 @@
 
 RSpec.describe Questionmark::Barcodes do
   it "has a version number" do
-    expect(Questionmark::Barcodes::VERSION).not_to be nil
-  end
-
-  it "does something useful" do
-    expect(false).to eq(true)
+    expect(Questionmark::Barcodes::VERSION).not_to be_nil
   end
 end
