@@ -6,7 +6,7 @@ Questionmark::Barcodes (QM:B for short) was extracted from Questionmark-API in o
 
 Because this will be a privately hosted gem hosted on GitHub at first, installation instructions are a little different than usual. Add this to the application's `Gemfile`:
 
-    gem 'questionmark-barcodes', github: 'q-m/questionmark-barcodes', tag: '0.1.0'
+    gem 'questionmark-barcodes', github: 'q-m/questionmark-barcodes', tag: 'v0.1.0'
 
 This pins the gem to a specific release, allowing us to continue updating the repository and create new releases periodically that projects can adopt at their own pace.
 
