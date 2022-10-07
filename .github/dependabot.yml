@@ -1,0 +1,50 @@
+# This configures how Dependabot presents us with dependency updates.
+#
+# Security updates are by definition urgent and bypass this configuration. They are offered as soon as available.
+# Regular updates are offered based on the schedule defined here
+#
+# Docs: https://docs.github.com/en/github/administering-a-repository/keeping-your-dependencies-updated-automatically
+# Config options: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#configuration-options-for-the-dependabotyml-file
+#
+# Choice: update on Tuesday
+#
+# A lot of open source updates happen in the weekend.
+# A lot of companies apply these updates on Monday and discover bugs. Critical bugs will get fixed within 24h.
+# Waiting until Tuesday to update likely results in slightly more stable updates than Monday.
+#
+#
+# Choice: update a few small dependencies each week, to keep the time investment small (max 1h)
+#
+# Making a small, continuous effort to stay up-to-date is more important than always being on the bleeding edge.
+# Dependabot updates are intended for the low-hanging fruit.
+#
+#
+# Choice: major updates (such as Rails) don't have to be applied this way
+#
+# Updates that don't apply cleanly can be ignored. Just turn them into a Maintenance Issue so someone can pick it up later.
+
+version: 2
+updates:
+  # GitHub Actions
+  - package-ecosystem: github-actions
+    directory: '/'
+    open-pull-requests-limit: 5
+    schedule:
+      interval: weekly
+      day: tuesday
+      time: "08:00"
+      timezone: "Europe/Amsterdam"
+    pull-request-branch-name:
+      separator: "-"
+
+  # Ruby gems
+  - package-ecosystem: bundler
+    directory: '/'
+    open-pull-requests-limit: 5
+    schedule:
+      interval: weekly
+      day: tuesday
+      time: "08:00"
+      timezone: "Europe/Amsterdam"
+    pull-request-branch-name:
+      separator: "-"
