@@ -14,6 +14,6 @@ require "rubocop/rake_task"
 RuboCop::RakeTask.new
 
 desc "Run all tasks required to pass CI"
-task ci: %i[spec rubocop]
+task ci: %i[spec rubocop build]
 
 task default: %i[ci]
