@@ -1,16 +1,16 @@
-name: Ruby
+name: CI
 
 on:
   push:
     branches:
-      - stable
+      - main
 
   pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Ruby ${{ matrix.ruby }}
+    name: On Ruby ${{ matrix.ruby }}
     strategy:
       matrix:
         ruby:
@@ -25,5 +25,5 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
-    - name: Run the default task
+    - name: Run the CI task, which runs tests, rubocop and builds the gem
       run: bundle exec rake ci
