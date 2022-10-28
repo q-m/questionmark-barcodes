@@ -3,7 +3,7 @@ name: Ruby
 on:
   push:
     branches:
-      - stable
+      - main
 
   pull_request:
 

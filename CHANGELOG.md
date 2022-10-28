@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+- CI: trigger on pushes to `main` instead of `stable` ([#5](https://github.com/q-m/questionmark-barcodes/issues/5))
+
 ## [0.1.0] - 2022-10-07
 
 The initial release, offering feature parity with API's custom classes.
