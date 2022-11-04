@@ -1,6 +1,8 @@
 # Questionmark::Barcodes
 
-Questionmark::Barcodes (QM:B for short) was extracted from Questionmark-API in order to share our custom barcode logic between API and Hoard.
+Questionmark::Barcodes (QM:B for short) was extracted from one of Questionmark's internal systems in order to share our custom barcode logic between multiple systems.
+
+We've got some documentation on how we use [barcodes](./doc/barcodes.md) and [dummy EANs](./doc/dummy-eans.md), which led to the creation of this repository.
 
 ## Installation
 

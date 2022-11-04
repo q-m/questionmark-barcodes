@@ -8,14 +8,9 @@ module Questionmark
     # These can be longer than regular EAN13s, but that's fine for our internal use.
     # This custom GTIN class supports the length 19 ones as a named first class citizen.
     #
-    # For documentation about Barcodes and how we use them:
-    # @see https://github.com/q-m/questionmark-api/wiki/Barcodes
-    #
     # Questionmark-specific dummy barcodes
-    # For documentation about our dummy barcodes, see the Hoard Readme:
-    # @see https://github.com/q-m/questionmark-hoard/blob/master/README.md#dummy-eans
-    #
-    # TODO: move this knowledge to a dedicated document in doc/Dummy-EANs.md and link to it from both API and Hoard.
+    # For documentation about our dummy barcodes, see our documentation:
+    # @see doc/dummy-eans.md
     class DummyGTIN < BarcodeValidation::GTIN::Base
       # The fallback supports length 6+ so ensure we are evaluated first
       prioritize_before FallbackDummyGTIN

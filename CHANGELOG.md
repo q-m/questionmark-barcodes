@@ -2,6 +2,7 @@
 
 - CI: trigger on pushes to `main` instead of `stable` ([#5](https://github.com/q-m/questionmark-barcodes/issues/5))
 - CI: slightly changed name of task to indicate it's a CI task
+- Doc: update descriptions to be more helpful for outside perspectives ([#7](https://github.com/q-m/questionmark-barcodes/issues/7))
 
 ## [0.1.0] - 2022-10-07
 
