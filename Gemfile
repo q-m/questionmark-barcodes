@@ -13,7 +13,7 @@ gemspec
 gem "rake", "~> 13.0"
 
 # RSpec is our test framework
-gem "rspec", "~> 3.0"
+gem "rspec", "~> 3.12"
 
 # Rubocop and its extensions are for linting and enforcing best practices
 gem "rubocop", "~> 1.37"
