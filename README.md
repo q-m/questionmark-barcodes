@@ -6,7 +6,7 @@ We've got some documentation on how we use [barcodes](./doc/barcodes.md) and [du
 
 ## Installation
 
-Because this will be a privately hosted gem hosted on GitHub at first, installation instructions are a little different than usual. Add this to the application's `Gemfile`:
+Because this won't be published as a gem on Github, you can install it by adding this to the application's `Gemfile`:
 
     gem 'questionmark-barcodes', github: 'q-m/questionmark-barcodes', tag: 'v0.1.0'
 
@@ -16,9 +16,10 @@ This project intends to follow Semantic Versioning. See details below at "Releas
 
 ## Usage
 
-QM:B provides an extension to the GTIN classes implemented by BarcodeValidation. Because of this, it works automatically:
+QM:B provides an extension to the GTIN classes implemented by [BarcodeValidation](https://github.com/marketplacer/barcodevalidation). Because of this, it works automatically:
 
 ```ruby
+require 'questionmark-barcodes'
 BarcodeValidation.scan("12345670") # => BarcodeValidation::GTIN::GTIN8
 BarcodeValidation.scan("9669000000000") # => Questionmark::Barcodes::OldDummyGTIN
 BarcodeValidation.scan("9669990132302229019") # => Questionmark::Barcodes::DummyGTIN
@@ -35,6 +36,7 @@ Useful commands after checking out the repo:
 - `rake spec` to run tests
 - `rake rubocop` to run Rubocop, which checks the code style and may offer suggestions to improve the code
 - `bin/console` for an interactive prompt that will allow you to experiment
+- `rake ci` run all quality check tasks that CI will run, which is useful before you create a commit
 
 We use GitHub for issues, pull requests and Continuous Integration. We don't publish our gem, but we do use version numbers for releases and tag them so our repositories can use code intended for release, rather than living on the bleeding edge.
 
