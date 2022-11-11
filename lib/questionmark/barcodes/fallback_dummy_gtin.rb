@@ -6,9 +6,8 @@ module Questionmark
   module Barcodes
     # We use our own internal prefix for "dummy" barcodes.
     # This custom GTIN class supports lengths that we don't explicitly know about,
-    # such as the length 24 ones we saw from Aldi.
+    # such as the length 24 ones we've seen in specific cases.
     #
-    # @see https://github.com/q-m/research_issues/issues/2582
     # @see lib/questionmark_dummy_gtin.rb for a broader overview of all our dummy GTINs.
     class FallbackDummyGTIN < BarcodeValidation::GTIN::Base
       # This length is used for normalization but is _not_ the maximum we support.
