@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    questionmark-barcodes (0.1.0)
+    questionmark-barcodes (0.1.1)
       barcodevalidation (~> 2.6.0)
 
 GEM
@@ -71,4 +71,4 @@ DEPENDENCIES
   rubocop-thread_safety (~> 0.4.4)
 
 BUNDLED WITH
-   2.3.23
+   2.3.25
