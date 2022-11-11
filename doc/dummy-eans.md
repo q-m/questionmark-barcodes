@@ -2,7 +2,7 @@
 
 While barcodes are a central part of our infrastructure, so that we can relate products across data sources and supermarkets, there are cases when we want to include products that don't have a barcode. As an intermediate solution, we're giving certain products without an EAN an effective dummy EAN.
 
-Barcode prefix `9669` is used as a Questionmark-specific barcode. It is a GS1 Global Office prefix, and until now not found on supermarkets products, and not likely to be in the future. Note that these barcodes _should not_ be communicated _outside_ Questionmark, since they are merely a tool to reduce complexity in our systems. It is not GS1-compliant.
+Barcode prefix `9669` is used as a Questionmark-specific barcode. It is a GS1 Global Office prefix, and until now not found on supermarkets products, and not likely to be in the future. Note that these barcodes _should not_ be communicated _outside_ Questionmark, since they are merely a tool to reduce complexity in Questionmark's systems. It is not GS1-compliant.
 
 These are the current use-cases for dummy barcodes:
 
