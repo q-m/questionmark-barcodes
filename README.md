@@ -8,7 +8,7 @@ We've got some documentation on how we use [barcodes](./doc/barcodes.md) and [du
 
 Because this won't be published as a gem on Github, you can install it by adding this to the application's `Gemfile`:
 
-    gem 'questionmark-barcodes', github: 'q-m/questionmark-barcodes', tag: 'v0.1.0'
+    gem 'questionmark-barcodes', github: 'q-m/questionmark-barcodes', tag: 'v0.1.1'
 
 This pins the gem to a specific release, allowing us to continue updating the repository and create new releases periodically that projects can adopt at their own pace.
 
@@ -46,7 +46,8 @@ This project intends to follow [Semantic Versioning](https://semver.org/). This 
 
 - Check the [Changelog](./CHANGELOG.md) and ensure you've added a header for the new version + date that captures all unreleased changes.
 - Update [version.rb](./lib/questionmark/barcodes/version.rb) to match this new version
-- Run `bundle exec rake release` to create a commit + tag based on this, and push them to GitHub. We automatically set the ENV variable `gem_push=no` in our [Rakefile](./Rakefile) to ensure we don't push the gem to rubygems.org.
+- Create a local new branch "version-X-Y-Z" and commit the changes `git commit -am "Version X.Y.Z"`
+- Run `bundle exec rake release` to create a tag based on this, and it and the commit them to GitHub. We automatically set the ENV variable `gem_push=no` in our [Rakefile](./Rakefile) to ensure we don't push the gem to rubygems.org.
 
 ## Contributing
 
