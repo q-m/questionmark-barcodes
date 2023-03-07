@@ -17,7 +17,7 @@ gem "rspec", "~> 3.12"
 
 # Rubocop and its extensions are for linting and enforcing best practices
 gem "rubocop", "~> 1.39"
-gem "rubocop-performance", "~> 1.15"
+gem "rubocop-performance", "~> 1.16"
 gem "rubocop-rake", "~> 0.6.0"
 gem "rubocop-rspec", "~> 2.17"
 gem "rubocop-thread_safety", "~> 0.4.4"
