@@ -32,10 +32,12 @@ updates:
     schedule:
       interval: weekly
       day: tuesday
-      time: "08:00"
+      time: "07:00"
       timezone: "Europe/Amsterdam"
     pull-request-branch-name:
       separator: "-"
+    reviewers:
+      - "wvengen"
 
   # Ruby gems
   - package-ecosystem: bundler
@@ -44,7 +46,9 @@ updates:
     schedule:
       interval: weekly
       day: tuesday
-      time: "08:00"
+      time: "07:00"
       timezone: "Europe/Amsterdam"
     pull-request-branch-name:
       separator: "-"
+    reviewers:
+      - "wvengen"
