@@ -10,7 +10,7 @@ gemspec
 #
 
 # Rake wraps common tasks such as running tools and generating releases
-gem "rake", "~> 13.1"
+gem "rake", "~> 13.2"
 
 # RSpec is our test framework
 gem "rspec", "~> 3.13"
